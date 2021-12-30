@@ -1,0 +1,16 @@
+<a routerLink="/create">Add New Student</a>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let student of getAllStudent()">
+    <td>{{student.name}}</td>
+    <td>{{student.age}}</td>
+    <td><a routerLink="/delete/{{student.id}}">Delete</a></td>
+    <td><a routerLink="/update/{{student.id}}">Update</a></td>
+  </tr>
+</table>
+

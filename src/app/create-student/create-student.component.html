@@ -1,0 +1,10 @@
+<a routerLink="">Return List Student</a>
+<form  (ngSubmit)="createNewStudent()">
+  <label for="id">Student ID</label>
+  <input type="text" [(ngModel)]="student.id" name="id" id="id">
+  <label for="name">Name</label>
+  <input type="text" [(ngModel)]="student.name" name="name" id="name">
+  <label for="age">Age</label>
+  <input type="text" [(ngModel)]="student.age" name="age" id="age">
+  <button type="submit">Create</button>
+</form>

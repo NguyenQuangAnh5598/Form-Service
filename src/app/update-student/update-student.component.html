@@ -1,0 +1,9 @@
+<a routerLink="">Return List Student</a>
+<form  (ngSubmit)="updateStudentById()">
+  <input type="text" [(ngModel)]="student.id" name="id" id="id" hidden>
+  <label for="name">Name</label>
+  <input type="text" [(ngModel)]="student.name" name="name" id="name">
+  <label for="age">Age</label>
+  <input type="text" [(ngModel)]="student.age" name="age" id="age">
+  <button type="submit">Update</button>
+</form>
